@@ -1,0 +1,28 @@
+html,body{
+	padding :0;
+	margin: 0;
+}
+body{
+	padding:3px 12px;
+	width:100%;
+	color:blue;
+	background-color:#9e9e9e0a;
+	margin:auto;
+	
+
+	
+}
+h1{
+	text-align:center;
+	font-size:30px;
+	opacity:0.5;
+}
+form{
+	font-family: system-ui;
+    margin: 0 360px;
+}
+form input{
+	margin:5px;
+	width:220px;
+	text-align:center;
+}

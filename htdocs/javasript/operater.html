@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>operators</title>
+</head>
+<body>
+	<h1>Hello Duds</h1>
+
+	<script type="text/javascript">
+		var a,b,operator,add,sub,mul,div;
+		a =	parseInt(prompt("Enter a value in a"));
+		b =	parseInt(prompt("Enter a value in b"));
+		operator=prompt("operator values:-");
+		if(operator=="add")
+		{
+			add=a+b;
+			document.write("Add is number:- "+add);
+		}
+		else if(operator=="sub")
+		{
+			sub=a-b;
+			document.write("Sumbtration is number "+sub);
+		}
+		else if(operator=="mul")
+		{
+			mul=a*b;
+			document.write("Multplaction is number "+mul)
+		}
+		else if(operator=="div")
+		{
+			div = a/b;
+			document.write("Dividation is number "+div);
+		}
+		else
+			document.write("Wrong Values");
+	</script>
+</body>
+</html>

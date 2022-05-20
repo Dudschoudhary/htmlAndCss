@@ -1,0 +1,51 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+
+}
+table{
+	width: 100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+
+}
+table tr:nth-child(1){
+	/*border: 2px solid red;*/
+}
+table label td{
+	border: 1px solid;
+}
+
+.text{
+	/*border: 2px solid yellow;*/
+	height: 40px;
+}
+.img img{
+	width: 200px;
+}
+.data h1:nth-child(1){
+	line-height: 25px;
+}
+.data label	 {
+	margin-right: 670px;
+}
+.data tr td{
+	/*border: none;*/
+}
+.invoice{
+	float: right;
+	margin-top: 115px;
+}
+table:nth-child(2)tr th td{
+	border: 1px solid;
+	background: red;
+}
+/*table.table2 tr th td{*/
+	/*border: 1px solid;*/
+}
+
+
+
+

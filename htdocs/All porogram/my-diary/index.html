@@ -1,0 +1,168 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <title>My Diary - Vigat Bahee (विगत बही)</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Bharoo Jangid">
+    <meta name="description" content="Vigat Bahee (विगत बही)">
+    <meta name="keywords" content="Vigat Bahee,विगत बही," >
+    <meta property="og:site_name" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/logo.png">
+    <meta property="og:url" content="">
+
+    <link rel="shortcut icon" href="./images/favicon.ico"/>
+<link rel='stylesheet' href='./css/default_style.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='./css/style.css' type='text/css' media='all' />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/store.js/2.0.0/store.legacy.min.js" integrity="sha512-zhsV0SeHt/F2B18u0dmoCHOWpmt/QBNAcwqTsqmRdRCnzlIaTJJNKR+eau8O5ZrAjvO2AeCUIlMMfxVxrxbisA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type='text/javascript' src='./js/main.js'></script>
+</head>
+<body>
+
+    <div class="main_area">
+        <div class="header_area">
+            <table style="width:100%;">
+                <tr>
+                    <td><img src="images/logo.png" class="logo_img"></td>
+
+                    <td style="width:100%;text-align: center;"><h3>विगत बही</h3></td>
+
+                    <td><img src="images/logo.png" class="logo_img"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="content_area">
+
+<div class="page page_bahee_list" id="page_bahee_list">
+
+<button onclick="openNewPage('page_bahee_form')">+ नई बही बनाएं</button>
+            <hr>
+
+<table id="table_bahee_list" class="table table-bordered" width="100%" cellpadding="5" cellspacing="0">
+    <thead>
+        <tr>
+            <th>क्र</th>
+              <th width="100%">बही का नाम</th>
+              <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    <tr>
+        <td>1</td>
+        <td>भारू सुथार रे विवाह री विगत </td>
+        <td><button>X</button></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>दूदा राम रे विवाह री विगत</td>
+        <td><button>X</button></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>कुभा भाई रे मुकलावे री पगेलगाई</td>
+        <td><button>X</button></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>बहिन मूली रे मोमेरे री ओढावणी</td>
+        <td><button>X</button></td>
+    </tr>
+    </tbody>
+    
+</table>
+</div>
+
+
+<div class="page page_bahee_form" id="page_bahee_form">
+
+<button onclick="openNewPage('page_bahee_list')">बही लिस्ट पर जाएं</button>
+            <hr>
+
+<h3 style="text-align: center;">नई विगत बही  की जानकारी भरें   </h3>
+    <form class="ajax_form" id="form_new_bahee"  method="post"  >
+विगत बही का नाम:-<br>
+<input type="text" name="bahee_name" id="bahee_name" required> <br>
+<br>अधिक जानकारी:-<br>
+<textarea name="bahee_detail" id="bahee_detail" rows="3" required></textarea><br>
+<br>
+<button type="submit">सेव करें</button>
+</form>
+</div>
+
+
+<div class="page page_b_rec_list" id="page_b_rec_list">
+
+<button onclick="openNewPage('page_bahee_list')">बही लिस्ट पर जाएं</button>
+            <hr>
+<div class="b_rec_info"> 
+<div class="b_rec_name" id="b_rec_name">asdasd</div>
+<div class="b_rec_detail" id="b_rec_detail">sadsadsadasdasfdas</div>
+</div>
+
+
+
+<table class="table table_rec_list" cellpadding="0" cellspacing="0">
+    <thead>
+<tr>
+    <th>राशि </th>
+<th>नाम</th>
+<th>आवता </th>
+<th>ऊपर</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td align="right">50</td>
+  <td width="100%">सुथार वरिंगा राम / तिलोका जी नई उन्दरी</td>
+     <td align="right" >-</td>
+   <td align="right">50</td>
+</tr>
+    <tr>
+<td align="right">250</td>
+  <td width="100%">जाट मुकना / लछीराम  जी नई  उन्दरी</td>
+     <td align="right" >50</td>
+   <td align="right">200</td>
+</tr>
+</tbody> 
+ <tfoot>
+     <tr>
+        <th  align="right">300</th>
+         <th></th>
+          <th  align="right">50</th>
+           <th  align="right">300</th>
+     </tr>
+ </tfoot>
+
+    </table>
+
+   
+</div>
+
+
+
+
+        </div>
+
+ <div class="footer_area">
+    <div class="footer_note">
+        Design & Development By : <a href="javascript:;">Bharoo Jangid</a>
+    </div>
+        </div>
+      </div>   
+    </body>
+</html>
+        
+

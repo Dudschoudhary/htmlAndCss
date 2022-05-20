@@ -1,0 +1,128 @@
+html,body{
+	padding: 0;
+	margin: 0;
+
+}
+body{
+	background-color: #fafafa;
+	padding: 0 300px;
+}
+h3{
+	color: red;
+	margin: 0 30px;
+}
+h1{
+	color: red;
+	text-align: center;
+}
+.name{
+	padding: 10px 30px;
+}
+.name label{
+ margin-right: 100px;
+}
+input{
+	height: 20px;
+	width: 28%;
+}
+.email{
+	padding: 10px 30px;
+	
+}
+.email label{
+ margin-right: 100px;
+}
+.eduction{
+	padding: 10px 30px;
+	}
+.eduction label{
+ margin-right: 81px;
+}
+.resume{
+  padding: 10px 30px;
+}
+.resume label {
+ margin-right: 81px;
+}
+.resume button{
+	margin: 7px;
+}
+.address{
+ padding: 10px 30px;
+}
+.address label{
+ margin-right: 81px;
+
+}
+.country {
+ margin-right: 81px;
+}
+.country label{
+ padding: 10px 30px;
+ 
+}
+.country select{
+	margin-left: 59px;
+	width: 171px;
+	height: 26px;
+}
+.city {
+ margin-left: 172px;
+ padding: 12px 0px;
+}
+
+}
+.phone_number{
+ padding: 10px 30px;
+ }
+.phone_number label{
+ margin-right: 45px;
+     margin: 0px 32px;
+ }
+.phone_number input{
+ margin: 0 11px;
+} 
+.hobbies{
+ padding: 10px 30px;
+}
+.hobbies label{
+ margin-right: 81px;
+}
+.hobbies input{
+	    margin-left: 142px;
+	    width: 500px;
+}
+
+.details{
+	padding: 10px 30px;
+}
+.details label{
+ margin-right: 34px;
+}
+.job_title{
+	padding: 10px 30px;
+}
+.job_title label{
+ margin-right: 84px;
+}
+
+.here{
+	padding: 10px 30px;
+}
+.here label{
+ margin-right: 106px;
+}
+.btn{
+	text-align: center;
+
+}
+.btn button{
+	background-color: red;
+	margin: 6px;
+
+}
+.phone_number select{
+
+    height: 25px;
+    margin: 12px;
+}

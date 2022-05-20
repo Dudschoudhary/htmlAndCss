@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		header
+		{
+			width:100%;
+			height:60px;
+			background:#000;
+		}
+		a,a:hover{
+			color:#fff;
+		}
+		nav
+		{
+			display: flex;
+			height:100%;
+		}
+		nav .logo,
+		nav .links,
+		nav .icons
+		{
+			margin:auto;
+		}
+		nav .logo
+		{
+			color:#fff;
+			font-size:25px;
+			font-family: cursive;
+		}
+		ul
+		{
+			height:100%;
+			list-style:none;
+		}
+		ul li
+		{
+			padding:21px;
+			height:100%;
+			float:left;
+		}
+		.deatils
+		{
+			width: 100%;
+			display: flex;
+		}
+		.deatils2
+		{
+			width: 100%;
+			display: flex;
+		}
+		.deatils img
+		{
+			width: 100%;
+			height: 100%;
+		}
+		.marquee
+		{
+			animation:slider
+			;
+			display: flex;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			position: relative; 
+			animation-delay: 1s;
+		}
+		@keyframes slider
+		{
+			
+			0%   { left:0px; top:0px;}
+			100% {left:100%; top:0px;}
+			
+		}
+		@media(max-width:768px)
+		{
+			nav{
+				display:block;
+			}
+			nav .logo
+			{
+				justify-content:center;
+				align-items: center;
+				display: flex;
+				height:100%;
+			}
+			ul
+			{
+				height:0;
+				overflow:hidden;
+				background:#f1f1f1;
+			}
+			ul li
+			{
+				float:left;
+			}
+			ul li a
+			{
+				color:#000;
+			}
+			nav .icons li 
+			{
+				float: left;
+			}
+			ul li
+			{
+				display: block;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo">
+					<span style="color:#fff;position:absolute;left:25px;cursor:pointer;" onclick="list();">+</span>Welcome</div>
+
+					<ul id="list" class="links">
+						<li><a href="home.html">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Service</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href=""><i class="fa fa-instagram"></i></a></li>
+						<li><a href=""><i class="fa fa-facebook"></i></a></li>
+						<li><a href=""><i class="fa fa-whatsapp"></i></a></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="info">
+				<h1>
+				All types of tools available(Tractor,Car,motorcycle,Cycle,Fan,air conditioner	...)		</h1>
+			<!-- </div>
+			<div class="deatils">
+				<div><img src="../image/41.jpg"></div>
+				<div><img src="../image/splender.jpg"></div>
+				<div><img src="../image/splenter.jpg"></div>
+				<div><img src="../image/activa.jpg"></div>
+				<div><img src="../image/pulser.jpg"></div>
+			</div>
+			<div class="deatils2">
+				<div><img src="../image/pulser.jpg"></div>
+				<div><img src="../image/hf.jpg"></div>
+				<div><img src="../image/hf2.jpg"></div>
+				<div><img src="../image/car.jpg"></div>
+				<div><img src="../image/troli1.jpg"></div>
+				<div><img src="../image/troli2.jpg"></div>
+			</div>
+			<div> --> 
+
+				<div class="runing">
+					<img src="../image/troli.jpg">
+					<img src="../image/car.jpg">
+					<img src="../image/41.jpg">
+					<img src="../image/splenter.jpg">
+					<img src="../image/activa.jpg">
+					<img src="../image/splender.jpg">
+					<img src="../image/pulser.jpg">
+					<div>
+					</div>
+					<div class="marquee">
+						<img src="../image/splenter.jpg">
+						<div><img src="../image/pulser.jpg"></div>
+						<div><img src="../image/hf.jpg"></div>
+						<div><img src="../image/hf2.jpg"></div>
+						<div><img src="../image/car.jpg"></div>
+						<div><img src="../image/troli1.jpg"></div>
+						<div><img src="../image/troli2.jpg"></div>
+					</div>
+					<script type="text/javascript">
+
+
+						function list()
+						{
+							var list = document.getElementById('list');
+							console.log(list.style.height)
+
+							if(list.style.height=="auto")
+							{
+								list.style.height="0px";
+							}
+							else
+							{
+								list.style.height="auto";
+							}
+							console.log(list.style.height)
+						}
+					</script>
+				</body>
+				</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Website</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+					<span style="color:#fff;position:absolute;left:25px;cursor:pointer; list-style:none"onclick="list();">					<li><a><i class="fa fa-car"></i></a></li></span>Website</div>
+			</div>
+			<div class="menu">
+				<ul>
+					<li>
+						<a href="#">Home</a>
+						<a href="#">About</a>
+						<a href="#">Contect</a>
+						<a href="#">Gellery</a>
+						
+					</li>
+				</ul>
+			</div>
+			<div class="icons">
+				<ul>
+					<li><a><i class="fa fa-car"></i></a></li>
+					<li><a><i class="fa fa-phone"></i></a></li>
+					<li><a><i class="fa fa-whatsapp"></i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<script type="text/javascript">
+
+
+		function list()
+		{
+			var list = document.getElementById('list');
+			console.log(list.style.height)
+				
+			if(list.style.height=="auto")
+			{
+				list.style.height="0px";
+			}
+			else
+			{
+				list.style.height="auto";
+			}
+			console.log(list.style.height)
+
+
+		}
+</body>
+</html>

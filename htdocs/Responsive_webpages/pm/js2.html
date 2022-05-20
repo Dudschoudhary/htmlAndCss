@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+
+			button
+			{
+				padding:10px 15px;
+				font-size: 20px;
+			}
+	</style>
+</head>
+<body>
+			
+			<button onclick="plus()">+</button>
+			<button onclick="minus()">-</button>
+
+			<ul id="list" style="font-size: 18px;">
+					<li>One</li>
+					<li>Two</li>
+					<li>Three</li>
+					<li>Four</li>
+					<li>Five</li>
+			</ul>
+
+			<script type="text/javascript">
+
+
+				var list = document.getElementById("list");
+				function plus()
+				{
+					// var oldSize = list.style.fontSize.split('px')[0];
+					list.style.fontSize = (parseInt(list.style.fontSize.split('px')[0])+1)+"px";
+				}
+
+				function minus()
+				{
+					list.style.fontSize = (parseInt(list.style.fontSize.split('px')[0])-1)+"px";
+				}
+			</script>
+</body>
+</html>
+
+<!--  18px -->

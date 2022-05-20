@@ -1,0 +1,24 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	margin: 0 445px;
+	font-family: system-ui;
+}
+
+h1 {
+	margin: 0 75px;
+	margin-bottom: 16px;
+	color: blue;
+}
+
+table {
+	background: wheat;
+}
+
+h4 {
+	color: blue;
+}

@@ -1,0 +1,65 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	background-color:red;
+	color:white;
+	display:flex;
+}
+form div
+{
+	display:flex;
+	padding:5px 100px;
+	position:reletive;
+}
+form{
+	width:70%;
+	height:100%;
+	background:#000;
+	margin:auto;
+	justfy-content:center;
+	alingn-item:center;
+	font-family: 'Patua One', cursive;
+}
+form input{
+	margin:auto;
+	padding:7px;
+	width:60%;
+	font-size:20px;
+	color:red;
+}
+form label{
+	margin:auto;
+	position:absolute;
+	left:20%;
+	font-size:20px;
+}
+.btn {
+	width:70%;
+	height:100%;
+	
+}
+.gender{
+	width:32%;
+	height:100%;
+	display:flex;
+	background:blue;
+}
+.gender lable{
+	margin:auto;
+}
+.gender input{
+	margin:auto;
+}
+.gender span{
+	margin-right:80px;
+}
+.btn button{
+	position:center;
+	color:red;
+	margin-left:350px;
+	width:130px;
+	height:30px;
+	font-size:20px;
+}

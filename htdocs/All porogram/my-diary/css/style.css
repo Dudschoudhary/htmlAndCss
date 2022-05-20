@@ -1,0 +1,94 @@
+html,body{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #F1f1f1;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+.page{
+    display: none;
+}
+
+.main_area{
+background-color: #ffffff;
+    max-width: 100%;
+    width: 500px;
+    margin: 0px auto;
+        overflow: hidden;
+}
+.header_area{
+    background-color: #ffe10d6b;
+    padding: 5px;
+    box-shadow: 0px -3px 13px 0px #000000ab;
+        height: 45px;
+}
+.logo_img{
+ height:36px;
+}
+.header_area h3{
+    margin: 0;
+    color: #ff0503;
+    font-weight: bold;
+}
+
+
+.content_area{
+   height: calc(100vh - 115px);
+    padding: 15px;
+    overflow-x: hidden;
+}
+
+.footer_area{
+
+    height: 30px;
+    background: #fff29947
+
+}
+.footer_note{
+	    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    border-top: 1px solid #ff0d0d;
+    line-height: 30px;
+}
+
+
+input,textarea{
+    width: 100%;
+}
+
+.table_rec_list{
+    background-color: #fff299;
+    color: red;
+    font-size: 0.80rem;
+}
+.b_rec_info{
+    border: 1px solid #ff0000f2;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #f7e35f;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.b_rec_info .b_rec_name{
+border-bottom: 1px solid #fff;
+}
+
+.b_rec_info .b_rec_detail{
+    font-size: 0.92rem;
+    font-style: italic;
+}

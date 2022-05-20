@@ -1,0 +1,149 @@
+html,body{
+padding:0;
+margin:0;
+}
+body{
+background:#e5ff3bb0 ;
+}
+.fl{
+     float: left;
+}
+.fr{
+     float: right;
+}
+.clear{
+       clear: both;
+}
+.page{
+     /* display: none;*/
+  }
+  .logo_img{
+  	height:25px;
+  }
+  .main_area{
+    background: #d5adadde;
+  max-width: 100%;
+  width: 500px;
+   margin: 0px auto;
+  overflow: hidden;
+}
+.header_area {
+    background-color: #ff57226b;
+    padding: 18px;
+    box-shadow: 1px 2px;
+    height: 75px;
+    
+}
+
+.header_area h3{
+   font-size: 0.9em;
+    margin: 0;
+    color: #ff0503;
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 3px;
+    padding-bottom: 2px;
+}
+
+.content_area{
+height:calc(100vh - 115px);
+padding: 5px;
+margin: 1px;
+overflow-x: hidden;
+}
+
+.footer_area{
+  height: 30px;
+  background:#ffeb3bb0;
+
+}
+
+
+
+
+.footer_note{
+     
+    font-size: 19px;
+    font-style: italic;
+    font-weight: bold;
+    border-top: 1px solid;
+    line-height: 32px;
+}
+
+
+
+
+
+
+input_textarea{
+ width: 100%;
+}
+
+.menu_area {
+    /*border: 1px solid;*/
+}
+ .menu_area a:link,
+ .menu_area a:visited{
+ text-decoration:none ;
+ padding: 0px 8px;
+ font-size: 12px;
+ color: #000000;
+  font-weight: bold;
+  border-left: 2px solid #f222;
+ }
+
+  .menu_area a:hover {
+    color: #f30;
+}
+.menu_area a:active {
+    color: #00bcd4;
+}
+
+.menu_area a:first-of-type{
+    border: none;
+}
+
+
+
+.table_rec_list{
+  background-color: #fbbbbb85; 
+   color:red;
+  font-size: 0.80rem;
+}
+.b_rec_info{
+  border: 1px solid ;
+  padding: 5px ;
+  margin
+  border-bottom: 10px;
+  border-radius: 5px;
+  background: #f0f0f04f;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+.b_rec_info.b_rec_name{
+    border-bottem: 1px solid;
+    }
+
+
+    .page_profile_list{
+     color: #f1f;
+    font-style: italic;
+}
+.page_logout_list{
+
+    font-style: italic;
+    background: #009688;
+    text-align: center;
+   }
+.page_home_rec_list{
+ color: #2196f3;
+    font-style: italic;
+}
+#table_bahee_list{
+     
+    background: #ffffff;
+ color: #db1b0d;
+}
+
+

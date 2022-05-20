@@ -1,0 +1,296 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+		body
+		{
+				padding:10px;
+		}
+		.matrixs table
+		{
+			border-collapse: collapse;
+		}
+		.matrixs table th
+		{
+			border: 1px solid grey;
+			padding: 15px 25px;
+		}
+		.matrixs
+		{
+			display:flex;
+			width: 100%;
+			height:40vh;
+		}
+		.matrixs div
+		{
+			width:50%;
+			height:100%;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			background:#f1f1f1;
+			margin:10px;
+		}
+		@media(max-width:768px)
+		{
+			.matrixs
+			{
+				display:block;
+				height:50vh;
+			}
+			.matrixs div
+			{
+				width:95%;
+				height:50%;
+			}
+		}
+		button
+		{
+			border: 0;
+			outline: 0;
+			background:rgba(0, 0, 0, 0.8);
+			padding:15px;
+			color:#fff;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+		button:hover
+		{
+			background:#fff;
+			color:rgba(0, 0, 0, 0.6);
+		}
+		.output
+		{
+			width:100%;
+			height:50vh;
+			padding:10px;
+			margin-top: 10px;
+		}
+		.output .table
+		{
+			background:#f1f1f1;
+			height:100%;
+			width:100%;
+			justify-content:center;
+			align-items:center;
+			display:flex;
+			position:relative;
+		}
+		.output .table table
+		{
+			width:200px;
+			height:200px;
+		}
+		input
+		{
+			width:100%;
+			height:100%;
+			font-size:35px;
+			text-align: center;
+			outline:none;
+			border:1px solid grey;
+			color:grey;
+		}
+		input:focus
+		{
+			border:1px solid #000;
+		}
+		#submit
+		{
+			position: absolute;
+			bottom: 10px;
+			width:12%;
+			display:none;
+		}
+	</style>
+</head>
+<body>	
+
+	<main>
+		<div class="matrixs">
+			<div id="one">
+				<button onclick="matrix1(this)">Create Matrix 1</button>
+			</div>
+			<div id="two">
+				<button onclick="matrix2(this)">Create Matrix 2</button>
+			</div>
+		</div>
+		<div class="output">
+			<div class="table">
+				<table id="table">
+					<tr>
+						<th><input type="text" name=""></th>
+						<th><input type="text" name=""></th>
+						<th><input type="text" name=""></th>
+					</tr>
+					<tr>
+						<th><input type="text" name=""></th>
+						<th><input type="text" name=""></th>
+						<th><input type="text" name=""></th>
+					</tr>
+					<tr>
+						<th><input type="text" name=""></th>
+						<th><input type="text" name=""></th>
+						<th><input type="text" name=""></th>
+					</tr>
+				</table>
+				<button id="submit" onclick="submit()">Submit</button>
+			</div>
+		</div>
+	</main>
+
+</br>
+</br>
+
+<script type="text/javascript">
+
+	var mat1 = [[],[],[]];
+	var mat2 = [[],[],[]];
+	
+	function matrix1(e)
+	{
+		var table = document.createElement('table');
+		for(var i=0;i<3;i++)
+		{
+			var tr = document.createElement('tr');
+			for(j=0;j<3;j++)
+			{
+				var th = document.createElement('th');
+				mat1[i][j] = randomNum();
+				th.innerHTML = mat1[i][j];
+				tr.appendChild(th);
+			}
+			table.appendChild(tr);
+		}
+			document.getElementById('one').appendChild(table);
+			e.style.display="none";
+
+
+			// c = 15;
+			// d = 13;
+
+			// e = c<d ? "c is Greter" : "d is greater";
+			// console.log(e)
+	}
+
+	function matrix2(e)
+	{
+		var table = document.createElement('table');
+		for(var i=0;i<3;i++)
+		{
+			var tr = document.createElement('tr');
+			for(j=0;j<3;j++)
+			{
+				var th = document.createElement('th');
+				mat2[i][j] = randomNum();
+				th.innerHTML = mat2[i][j];
+				tr.appendChild(th);
+			}
+			table.appendChild(tr);
+		}
+		document.getElementById('two').appendChild(table);
+		e.style.display="none";
+	}
+
+	function randomNum()
+	{
+		return Math.ceil(Math.random() * 9) * (Math.round(Math.random()) ? 1 : -1);
+	}
+
+	var input = document.querySelectorAll('input');
+	let a = 0;
+	input.forEach((e)=>{
+		e.setAttribute('onkeyup','numOnly(this)');
+	});
+
+	function numOnly(e)
+	{
+		var inputVal = document.querySelectorAll('input');
+		inputVal.forEach((j)=>
+		{
+			if(j.value=='')
+			{
+				document.getElementById('submit').style.display="none";
+				j.style.background="#fff";
+			}
+			else{
+				document.getElementById('submit').style.display="block";
+				j.style.background="grey";
+				j.style.color="#fff";
+			}
+		});
+	}
+
+	function submit()
+	{
+		var answer = [[],[],[]];
+		var Useranswer = [[],[],[]];
+		for(let i=0;i<3;i++) 
+		{
+			sum = 0;
+			for(let j=0;j<3;j++)
+			{	
+				sum = 0;
+				for(let k=0;k<3;k++)
+				{
+					sum = sum + (mat1[i][k] * mat2[k][j]);
+				}
+				answer[i][j] = sum;
+			}	
+		}
+		var input = document.querySelectorAll('input');
+		var first = 0;
+		var second = 0;
+		input.forEach((e,key)=>
+		{
+			Useranswer[first][second] = parseInt(e.value); // 02
+			second++;
+			if(key==2 || key ==5 || key == 8){
+				first++;
+				second=0;
+			}
+		});
+		var input = document.querySelectorAll('input');
+		var b=0;
+		var all = 0;
+		for(let i=0;i<3;i++) 
+		{
+			for(let j=0;j<3;j++)
+			{ 
+				if(Useranswer[i][j]==answer[i][j])
+				{
+					input[b].style.background="green";
+					input[b].style.color="#fff";
+					all++;
+				}
+				else
+				{
+					input[b].style.background="red";
+					input[b].style.color="#fff";
+				}
+				b++;
+			}
+		}
+		if(all==9)
+		{
+			if(confirm("Very Good ! Are you play New Game"))
+			{
+				window.location.href=window.location.href;
+			}
+		}
+	}	
+
+
+
+
+</script>
+
+</body>
+</html>

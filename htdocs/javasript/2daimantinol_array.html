@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>2 Daimaintinol Array:</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var array=[[],[],[],[]];
+		document.write("Define Two daymontinol Array:-"+"<br>");
+
+		//Array Value given by User......
+
+		for(var i=0;i<3;i++)
+		{
+			for(var j=0;j<3;j++)
+			{
+				array[i][j]=parseInt(prompt("Enter a values"));
+			}
+		}
+		//Array Values Define......
+
+		for(var i=0;i<3;i++)
+		{
+			for(var j=0;j<3;j++)
+			{
+				document.write(array[i][j]);
+			}
+			document.write("<br>");
+		}
+
+		//Sum of Arrays....
+
+		var sum=0;
+		for(var i=0;i<3;i++)
+		{
+			for(var j=0;j<3;j++)
+			{
+				sum=sum+array[i][j];
+			}
+		}
+		document.write("Sum of Array"+sum+"<br>");
+
+			//Largest number of Arrays:-
+			var large=0;
+			for(var i=0;i<3;i++)
+			{
+				for(var j=0;j<3;j++)
+				{
+					if(large<array[i][j])
+					{
+						large=array[i][j];
+					}
+				}
+			}	
+			document.write("Largest Number of Array:-"+(large)+"<br>");
+
+		//Serch of Array elements:-.....
+		document.write("Search of Array Elements:-"+"<br>");
+		var n=parseInt(prompt("Search a value of Array :"));
+		let count = 0;
+		for(var i=0;i<3;i++)
+		{
+			for(var j=0;j<3;j++)
+			{
+				if(array[i][j]==n)
+				{
+					count++;
+				}
+			}
+		}	
+		if(count==0)
+			document.write("not Found");
+		else
+			document.write("Search value found :");
+
+		//single Array Value print:-
+		document.write("Single Arrays:-"+"<br>");
+		array[i][j]=0;
+		for(var i=0;i<3;i++)
+		{
+			for(var j=0;j<3;j++)
+			{
+				if(i==0 && j==2)
+					document.write(array[0][2]);
+			}
+		}	
+	</script>
+</body>
+</html>

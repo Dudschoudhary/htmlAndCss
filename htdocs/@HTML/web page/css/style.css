@@ -1,0 +1,33 @@
+html,body{
+	padding: 0;
+	margin: 0;
+}
+body{
+	width: 40%;
+	margin: 0 420px;
+
+}
+.logo_img img{
+	width: 500px;
+}
+.header_area{
+	height: 60px;
+	background-color: #009688;
+}
+.container{
+	display: flex;
+}
+.right{
+	width: 108px;
+	background-color: #009688;
+}
+table{
+	border: 1px solid;
+	margin: 0px 167px;
+}
+.main_div{
+	background-color: #009688;
+}
+.image{
+	display: flex;
+}

@@ -1,0 +1,208 @@
+html,
+body {
+	padding: ;
+	margin: ;
+}
+
+body {
+	font-family: sans-serif;
+	background-position: center;
+}
+
+.container {
+	width: 1050px;
+	margin: 0px auto;
+	background: #fee577;
+}
+
+.header_area {
+	background-color: #243bbb;
+}
+
+.mywebsite {
+	color: white;
+	margin: 0 17px;
+}
+
+.menu_area {
+	display: flex;
+	margin: 0 48px;
+}
+
+.home {
+	margin: 0 15px;
+	color: #ff23;
+}
+
+.home button {
+	color: #ffffff;
+	background: #f44336;
+	padding: 3px;
+}
+
+.about_me {
+	margin: 0 15px;
+}
+
+.about_me button {
+	background: #d5e816;
+	color: black;
+	width: 90px;
+	padding: 3px;
+}
+
+.blog {
+	margin: 0 15px;
+}
+
+.blog button {
+	background: #008eff;
+	color: white;
+	width: 90px;
+	padding: 3px;
+}
+
+.pictures {
+	margin: 0 15px;
+}
+
+.pictures button {
+	background: #008eff;
+	color: white;
+	width: 90px;
+	padding: 3px;
+}
+
+.contact {
+	margin: 0 15px;
+}
+
+.contect button {
+	background: #008eff;
+	color: white;
+	width: 90px;
+	padding: 3px;
+}
+
+.main_area {
+	width: 100%;
+	border: 1px solid;
+}
+
+.welcome {
+	display: block;
+	width: 60%;
+}
+
+.duds {
+	border: 1px dotted;
+	height: 151px;
+	margin-bottom: 26px;
+	margin-left: 29px;
+	background: white;
+	display: block;
+}
+
+h3 {
+	padding: 0px 29px;
+	margin-top: 32px;
+}
+
+.welcome_to {
+	display: flex;
+}
+
+.who_im {
+	display: block;
+	width: 28%;
+	margin: 0 40px;
+}
+
+.duda {
+	border: 1px solid;
+	background: white;
+}
+
+.duda img {
+	width: 28%;
+	float: right;
+	border: 1px solid;
+	margin: 0 4px;
+}
+
+h4 {
+	margin: auto;
+	padding: 5px 6px;
+}
+
+.explaction {
+	margin: 0 10px;
+}
+
+.explaction label {
+	font-size: 13px;
+	font-family: auto;
+}
+
+.image {
+	border: 1px solid;
+	margin: 30px 0px;
+}
+
+.image h4 {
+	margin: 0 10px;
+	color: red;
+}
+
+.page {
+	height: 133px;
+}
+
+.logo_img img {
+	width: 23px;
+}
+
+.logo_img label {
+	padding: 0px 15px;
+}
+
+.greet {
+	border: 1px dotted;
+	height: 120px;
+	margin-bottom: 26px;
+	margin-left: 29px;
+	background: white;
+	width: 160px;
+}
+
+.choudhary {
+	display: flex;
+}
+
+.saran {
+	width: 40%;
+	margin: 2px 81px;
+	padding: 5px 5px;
+}
+
+.saran1 {
+	margin: auto;
+	padding: 4px 5px;
+}
+
+.saran h4 {
+	color: #f12;
+}
+
+.footer_area {
+	width: 100%;
+	background-color: #ea4408;
+}
+
+.email {
+	width: 64%;
+}
+
+.my_web {
+	display: flex;
+}

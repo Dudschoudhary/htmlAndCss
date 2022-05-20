@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>logo</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.maindiv{
+			justify-content: center;
+			display: flex; 
+			margin-top: 300px;
+			animation:spin 5s linear infinite;
+			animation-duration: 10s;
+			width: 100%;
+		}
+		@keyframes spin{
+			100%{
+				transform: rotate(360deg); 
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="maindiv">
+	<div style="position: relative;">
+		<div style="border: 10px solid #00c7ff; border-radius: 50%; height: 325px; width: 115px; position: absolute; top:-137px; left: -31px; transform: rotate(55deg);"></div>
+		<div style="border: 10px solid #00c7ff; border-radius: 50%; height: 325px;width: 115px; position: absolute; top:-137px; left: -31px; "></div>
+		<div style="background-color:#00c7ff; height:70px; width: 70px; border-radius: 50%;"></div>
+		<div style="border: 10px solid #00c7ff; border-radius: 50%; height: 325px;width: 115px; position:absolute; top:-137px; left: -31px; transform: rotate(115deg);"></div>
+	</div>
+</div>
+</body>
+</html>

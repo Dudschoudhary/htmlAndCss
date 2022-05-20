@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<button onclick="plus()">+</button>
+	<button onclick="minus()">-</button>
+	<h1 id="list" style="font-size:20px">
+		<ul>
+			<li>Home</li>
+			<li>About</li>	
+			<li>Gallery</li>
+			<li>Home</li>
+		</ul>
+		<script type="text/javascript">
+			var list=document.getElementById("list");
+			function plus()
+			{
+				list.style.fontSize=(parseInt(list.style.fontSize.split("px")[0])-1)+"px";
+
+			}
+			function minus()
+			{
+
+				list.style.fontSize=(parseInt(list.style.fontSize.split('px')[0])+1)+"px";
+			}
+		</script>
+</body>
+</html>

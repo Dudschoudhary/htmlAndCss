@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=devive-width,initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+		}
+		a{
+			text-decoration: none;
+			color:#fff;
+		}
+		header
+		{
+			background:#000;
+			display:flex;
+			color:#fff;
+			height:75px;
+			width:100%;
+		}
+		header div,header nav
+		{
+			margin:auto;
+		}
+		header nav ul li
+		{
+			display:inline;
+			padding:5px 15px;
+			border-right:1px solid #fff;
+		}
+		header nav ul li:nth-last-child(1)
+		{
+			border-right:none;
+		}
+		header nav:nth-last-child(1) ul li
+		{
+			border-right:none;
+		}
+		@media(max-width:768px)
+		{
+			header
+			{
+				display:block;
+				height:60px;
+			}
+			header div 
+			{
+				padding:10px 0 0 0 ;
+				position:relative;
+				margin-bottom:12px;
+			}
+			header div h1
+			{
+				text-align:center;
+			}
+			header div i{
+				position:absolute;
+				top:35%;
+				left:5%;
+			}
+			header nav
+			{
+				opacity:0;
+				visibility:hidden;
+				transition:0.5s;
+			}
+			header nav ul li
+			{
+				display:block;
+				width:100%;
+				background:grey;
+				border-bottom:1px solid #fff;
+				padding:15px;
+				box-sizing: border-box;
+			}
+			header nav:nth-last-child(1) ul
+			{
+				width:100%;
+				background:grey;
+				display:flex;
+				padding:0 15px;
+				box-sizing:border-box;
+			}
+			header nav:nth-last-child(1) ul li
+			{
+				margin:auto;
+				background:transparent;
+				border-bottom:none;
+			}
+			body
+			{
+				background:red;
+			}
+		}
+		@media(min-width:768px)
+		{
+			header div i{
+				position:absolute;
+				visibility:hidden;
+			}
+		}
+	</style>
+</head>
+<body>
+			<header>
+				<div>
+					<i onclick="hello()" class="fa fa-whatsapp"></i>
+					<h1>My Website</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+				<nav>
+					<ul>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+						<li><a href="tel:+919587449072"><i class="fa fa-phone"></i></a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- <script type="text/javascript">
+
+				nav = document.getElementsByTagName('nav');
+
+				function hello()
+				{
+					for(i=0;i<nav.length;i++)
+					{
+						if(nav[i].style.visibility=="visible")
+						{
+							nav[i].style.opacity="0";
+							nav[i].style.visibility="hidden";
+						}
+						else
+						{
+							nav[i].style.opacity="1";
+							nav[i].style.visibility="visible";
+						}
+					}
+				}
+
+
+			</script> -->
+</body>
+</html>

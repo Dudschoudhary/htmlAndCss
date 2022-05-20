@@ -1,0 +1,179 @@
+html,body{
+	padding: 0;
+	margin: 0;
+}
+body{  
+/*color: red;*/	
+width: 848px;
+    margin: auto;
+
+}
+form{
+	border: 1px solid;
+}
+input{
+    margin: 4px 4px;
+}
+
+
+.main_div{
+	width: 100%;
+	display: flex;
+}
+
+
+.challan_form {
+	text-align: center;
+}
+.challan_no{
+	border: 1px solid;
+    width: 11%;
+    margin: 5px 6px;
+    text-align: center;
+}
+.text_applicable{
+    border: 1px solid;
+    width: 75%;
+    margin: 5px 6px;
+    text-align: center;
+    
+}
+.applicable_no{
+	border: 1px solid;
+    width: 122px;
+    margin: 5px 6px;
+    text-align: center;
+}
+
+
+
+}
+.full {
+    margin: 4px 4px;
+}
+.input input{
+    width: 95%;
+}
+.address{
+    margin: 4px 4px;
+    display: block;
+}
+.city input{
+    width: 95%;
+    height: 30px;
+}
+.teliphone{
+    margin: 4px 4px;
+}
+.teliphone label{
+    margin-right: 22px;
+}
+.main_div3{
+    width: 100%;
+    height: 50%;
+    border: 1px solid;
+    display: flex;
+}
+.name_rrr {
+    width: 20%;
+}
+.payment{
+    border: 1px solid;
+    width: 80%;
+}
+.payment label{
+    float: right;
+}
+.payment input{
+    width: 40px;
+
+    margin: 0 3px;
+}
+.tds{
+        margin: 10px 0px;
+}
+.dea{
+        margin: 7px 1px;
+}
+.surchange{
+        margin: 9px 1px;
+}
+.irtared{
+margin: 9px 1px;
+
+}
+.penalty{
+   margin: 9px 1px;
+ }
+ .total{
+    margin: 9px 1px;
+
+ }
+ table{
+    width: 100%;
+    border: none;
+    text-align: center;
+ }
+.date{
+    margin: 12px 4px;
+}
+
+
+ .date input{
+    width: 116px;
+ }
+ .down{
+ margin: 4px 4px;
+ }
+ .down select{
+ width: 89%;
+ margin: 0 3px;
+ height: 25px;
+ }
+ .name_code{
+    display: block;
+    text-align: center;
+ }
+ .recevrig{
+margin: 0 3px;
+ }
+ .date_month {
+    display: flex;
+
+ }
+ .bank_seal{
+    border: 1px solid;
+    height: 271px;
+    margin: 0 3px;
+ }
+ .date_da{
+    margin: 17px;
+ }
+
+
+ .date_da input{
+    border: none;
+    width: 120px;
+
+ }
+ .main_div4{
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+
+ }
+ 
+.roll{
+  width: 80%;
+  border: 1px solid;
+
+
+ }
+ .last{
+    width: 21%;
+ }
+ .rec_tom{
+    margin: 17px 0px;
+ }
+
+

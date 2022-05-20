@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,800;1,300;1,600;1,800;1,900&display=swap');
+*{
+	padding:0;
+	margin: 0;
+	font-family:'Nunito', sans-serif;
+	box-sizing: border-box;
+}
+a
+{
+	color:#fff;
+	text-decoration: none;
+}
+body
+{
+	/*overflow:hidden;*/
+}
+section
+{
+	width:100%;
+	height:100%;
+	position: relative;
+	padding:15px;
+}
+section.hero
+{
+	background:blue;
+	padding-bottom:70px;
+	/*background: linear-gradient(rgba(0, 0,255,0.7),rgba(0, 0, 255, 0.7)),url('../images/img.png');*/
+}
+section.hero::before
+{
+	content:'';
+	position:absolute;
+	height:100%;
+	width:100%;
+	background:url('../images/img.png');
+	opacity:0.9;
+	top:0;
+	left:0;
+}
+nav	
+{
+	display:flex;
+	position:relative;
+	padding:15px 0;
+}
+nav h1,nav ul{
+	margin:auto;
+}
+nav h1
+{
+	font-size:30px;
+	color:#fff;
+	font-weight:400;
+}
+nav h1 span{
+	font-size:40px;
+	font-weight:900;
+}
+nav ul li
+{
+	display:inline;
+	margin:0 20px;
+}
+nav ul li a{
+	font-size:22px;
+}
+nav ul li a i{
+	margin-right:20px;
+}
+.hero-box
+{
+	display:flex;
+}
+.hero-box .hero-heading,.hero-box .hero-form
+{
+	width:50%;
+	height:100%;
+	position:relative;
+}
+.hero-box .hero-heading
+{
+	font-size:65px;
+	padding:150px 0 0 300px;
+}
+.hero-box .hero-heading h1,.hero-box .hero-heading h2
+{
+	font-family:sans-serif;
+	text-transform: capitalize;
+	color:#fff;
+}
+.hero-box .hero-heading h2
+{
+	font-size:65px;
+	color:#54e4ba;
+}
+.hero-box .hero-form
+{
+	justify-content:center;
+	align-items:center;
+	display:flex;
+	margin-top:80px;
+}
+.hero-box .hero-form .form-box
+{
+	background:#f1f1f1;
+	padding:0 15px;
+}
+.hero-box .hero-form form
+{
+  position:relative;
+}
+.hero-box .hero-form form input,.hero-box .hero-form form textarea
+{
+	display:block;
+	margin:25px 20px;
+	outline:none;
+	border:none;
+	width:300px;
+	padding:15px 15px;
+	text-transform: capitalize;
+}
+.hero-box .hero-form form textarea
+{
+	height:90px;
+	font-size:15px;
+	vertical-align:middle;
+	justify-content: center;
+	align-items:center;
+}
+.hero-box .hero-form form .form-btn
+{
+	/*position:relative;*/
+	justify-content:center;
+	align-items:center;
+	display:flex;
+	padding:20px;
+}
+.hero-box .hero-form form .form-btn button,.hero-box .hero-heading button
+{
+	outline:none;
+	border:none;
+	padding:15px 35px;
+	background:#54e4ba;
+	color:#fff;
+	margin:auto;
+}
+
+/*   media query */
+
+
+@media(max-width: 768px)
+{
+	.hero nav
+	{
+		display:block;
+	}
+	.hero nav h1
+	{
+		text-align: center;
+	}
+	.hero nav ul
+	{
+		margin:15px 0 0 0;
+		text-align: center;
+	}
+	.hero nav ul li
+	{
+		display:block;
+	}
+	section
+	{
+		padding:0;
+	}
+	.hero-box
+	{
+		display:block;
+	}
+	.hero-box .hero-heading,.hero-box .hero-form
+	{
+		width:100%;
+	}
+	.hero-box .hero-heading
+	{
+		font-size:50px;
+		padding:50px 0 0 20px;
+	}
+	.hero-box .hero-form .form-box {
+	     padding:0; 
+	}
+}
+@media(min-width: 768px)
+{
+	.hero-box
+	{
+		display:block;
+	}
+	.hero-box .hero-heading,.hero-box .hero-form
+	{
+		width:100%;
+	}
+	.hero-box .hero-heading
+	{
+		font-size:60px;
+		padding:50px 0 0 90px;
+	}
+	.hero-box .hero-form{
+	     padding:0 100px;
+	}
+	.hero-box .hero-form .form-box
+	{
+	     padding:35px 10px; 
+		 width:100%;
+	}
+	.hero-box .hero-form .form-box input,.hero-box .hero-form .form-box textarea
+	{
+		width:95%;
+	}
+}
+@media(min-width: 1000px)
+{
+
+	.hero-box
+	{
+		display:flex;
+	}
+	.hero-box .hero-heading,.hero-box .hero-form
+	{
+		width:50%;
+	}
+	.hero-box .hero-heading
+	{
+		font-size:60px;
+		padding:110px 0 0 90px;
+	}
+	.hero-box .hero-form .form-box {
+	     padding:0; 
+	}
+	.hero-box .hero-form{
+	     	padding:0 15px;
+	}
+	.hero-box .hero-form .form-box
+	{
+	     padding:15px 15px;
+	}
+	.hero-box .hero-form .form-box input,.hero-box .hero-form .form-box textarea
+	{
+		width:90%;
+	}
+}
+@media(min-width:1200px)
+{
+	.hero-box .hero-heading
+	{
+		font-size:60px;
+		padding:130px 0 0 250px;
+	}
+	.hero-box .hero-form 
+	{
+		padding:0 170px;
+	}	
+}
+@media only screen and (max-width:415px) {
+  	.hero-box .hero-heading
+	{
+		padding:50px 0 0 10px;
+	}
+	.hero-box .hero-heading h2
+	{
+		font-size:50px;
+	}
+}

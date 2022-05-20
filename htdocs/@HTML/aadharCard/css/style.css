@@ -1,0 +1,62 @@
+html,body{
+	padding: 0;
+	margin: 0;
+}
+body{
+	margin: 10px 500px;
+	width: 25%;
+	padding-top: 30px;
+	font-family: 'Roboto', sans-serif;
+	background-image: url("bgdesert.jpg");
+	text-transform:capitalize;  
+		
+
+}
+.main_div{
+	display: flex;
+	width: 87%;
+	font-family: 'Roboto', sans-serif;
+}
+.satymev img{
+	width: 40px;
+}
+.logo_img img{
+	width: 70px;
+}
+.name{
+	margin: 0 37px;
+	width: 54%;
+}
+.main{
+	display: flex;
+}
+.image{
+	width: 40%;
+
+}
+.image img{
+	width: 45%;
+	margin: 0 59px;
+}
+.dudaram{
+	border: 1px dotted;
+}
+.date{
+	width: 72%;
+}
+.impty{
+	height: 52px;
+}
+hr.new3{
+	border: 10px dotted red;
+}
+ hr.new1 {
+        border-top: 1px solid red;
+        margin: 9px 10px;
+}
+.number{
+	margin: 0 98px;
+}  
+.my_aadhar{
+	text-align: center;
+}      

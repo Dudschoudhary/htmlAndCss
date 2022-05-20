@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fibbonaccii serise</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var	n=parseInt(prompt("Enter a value:-"));
+		var f1=0,f2=1,f3=0,i=0;
+		document.write("Fibbonaccii serise:-"+"<br>");
+		document.write(f1,f2);
+		while(i<=n)
+		{
+			f3=f1+f2;
+			document.write(f3);
+			f1=f2;
+			f2=f3;
+			i++;
+		}
+	</script>
+
+</body>
+</html>
